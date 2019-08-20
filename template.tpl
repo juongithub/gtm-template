@@ -140,7 +140,7 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const logToConsole = require('logToConsole');
 const sendPixel = require('sendPixel');
-const encodeUri = require('encodeUri');
+const encodeUriComponent = require('encodeUriComponent');
 
 let id = data.juc_ID || '';
 let value = data.juc_VALUE || '0';
@@ -175,7 +175,7 @@ if (eps.length) {
 
 let q=[];
 for (let k in query) {
-  q.push(k+'='+encodeUri(query[k]));
+  q.push(encodeUriComponent(k)+'='+encodeUriComponent(query[k]));
 }
 
 sendPixel('https://www.joturl.com/c/?'+q.join('&'), data.gtmOnSuccess, data.gtmOnFailure);
@@ -183,4 +183,4 @@ sendPixel('https://www.joturl.com/c/?'+q.join('&'), data.gtmOnSuccess, data.gtmO
 
 ___NOTES___
 
-Created on 8/15/2019, 1:03:03 PM
+Created on 8/20/2019, 2:38:31 PM
