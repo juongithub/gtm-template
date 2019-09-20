@@ -1,8 +1,8 @@
 ﻿___INFO___
 
 {
-  "displayName": "JotUrl Conversion Template",
-  "description": "Template code for JotUrl conversion script.",
+  "displayName": "JotUrl Conversion Code Template",
+  "description": "The JotUrl Conversion Code template allows you to track conversions originating from clicks on branded links you share on your offsite channels. Tutorials at: https://jo.my/joturl-video-tutorials",
   "securityGroups": [],
   "id": "cvt_temp_public_id",
   "type": "TAG",
@@ -183,4 +183,4 @@ sendPixel('https://www.joturl.com/c/?'+q.join('&'), data.gtmOnSuccess, data.gtmO
 
 ___NOTES___
 
-Created on 8/20/2019, 2:38:31 PM
+Created on 9/20/2019, 6:59:11 PM
