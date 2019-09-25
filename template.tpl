@@ -1,8 +1,17 @@
-﻿___INFO___
+﻿___TERMS_OF_SERVICE___
+
+By creating or modifying this file you agree to Google Tag Manager's Community
+Template Gallery Developer Terms of Service available at
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+Google may provide), as modified from time to time.
+
+
+___INFO___
 
 {
   "displayName": "JotUrl Conversion Code Template",
   "description": "The JotUrl Conversion Code template allows you to track conversions originating from clicks on branded links you share on your offsite channels. Tutorials at: https://jo.my/joturl-video-tutorials",
+  "categories": ["CONVERSION_TRACKING", "ANALYTICS"],
   "securityGroups": [],
   "id": "cvt_temp_public_id",
   "type": "TAG",
