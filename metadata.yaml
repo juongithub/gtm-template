@@ -1,5 +1,5 @@
 homepage: "https://www.joturl.com/",
 documentation: "https://joturl.zendesk.com/hc/en-us/",
 versions:
-  - sha: 47f4b6f09511d5d59fcbdc0458d67df8adaae5ee
-    changeNotes: added descriptions
+  - sha: 40f0c7b141d01c23811256a8742588a93a9a1cdf
+    changeNotes: tos + categories
