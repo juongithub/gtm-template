@@ -4,6 +4,6 @@ Cre­ate con­ver­sion codes within JotUrl’s dashboard, manage them within th
 
 Please refer to JotUrl’s:
 
-- video tutorials —> to get a conversion code up and running in minutes: https://jo.my/joturl-video-tutorials 
+- Video tutorials —> to get a conversion code up and running in minutes: https://jo.my/joturl-video-tutorials 
 - Help Center —> for details on how to setup your conversion codes in typical situations: https://joturl.zendesk.com/hc/en-us 
 - Blog —> for further articles on the subject: https://joturl.com/blog/
