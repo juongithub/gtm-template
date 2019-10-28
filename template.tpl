@@ -120,7 +120,20 @@ ___WEB_PERMISSIONS___
         "publicId": "send_pixel",
         "versionId": "1"
       },
-      "param": []
+      "param": [
+        {
+          "key": "urls",
+          "value": {
+            "type": 2,
+            "listItem": [
+              {
+                "type": 1,
+                "string": "https://www.joturl.com/c/*"
+              }
+            ]
+          }
+        }
+      ]
     },
     "isRequired": true
   },
