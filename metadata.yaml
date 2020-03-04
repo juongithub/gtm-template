@@ -1,5 +1,5 @@
 homepage: "https://www.joturl.com/",
 documentation: "https://joturl.zendesk.com/hc/en-us/",
 versions:
-  - sha: b68d7ea2e6f0325d76d5bca38dcebe501b2b58b3
-    changeNotes: added "Allowed URL Match Patterns"
+  - sha: 4d0959c8ab406ef684ebd52cc885af7907f2abc1
+    changeNotes: solved extended parameters bug
