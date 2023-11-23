@@ -45,6 +45,20 @@ ___TEMPLATE_PARAMETERS___
     "type": "TEXT"
   },
   {
+    "type": "TEXT",
+    "name": "juc_DOMAIN",
+    "displayName": "Domain of the tracking link associated with the conversion",
+    "simpleValueType": true,
+    "valueValidators": [
+      {
+        "type": "REGEX",
+        "args": [
+          "([a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,}"
+        ]
+      }
+    ]
+  },
+  {
     "valueValidators": [
       {
         "args": [
@@ -250,7 +264,9 @@ for (let k in query) {
   q.push(encodeUriComponent(k)+'='+encodeUriComponent(query[k]));
 }
 
-sendPixel('https://www.joturl.com/c/?'+q.join('&'), data.gtmOnSuccess, data.gtmOnFailure);
+let domain = data.juc_DOMAIN || 'joturl.com';
+
+sendPixel('https://'+domain+'/c/?'+q.join('&'), data.gtmOnSuccess, data.gtmOnFailure);
 
 
 ___WEB_PERMISSIONS___
@@ -264,18 +280,16 @@ ___WEB_PERMISSIONS___
       },
       "param": [
         {
-          "key": "urls",
+          "key": "allowedUrls",
           "value": {
-            "type": 2,
-            "listItem": [
-              {
-                "type": 1,
-                "string": "https://www.joturl.com/c/*"
-              }
-            ]
+            "type": 1,
+            "string": "any"
           }
         }
       ]
+    },
+    "clientAnnotations": {
+      "isEditedByUser": true
     },
     "isRequired": true
   },
@@ -294,6 +308,9 @@ ___WEB_PERMISSIONS___
           }
         }
       ]
+    },
+    "clientAnnotations": {
+      "isEditedByUser": true
     },
     "isRequired": true
   }
