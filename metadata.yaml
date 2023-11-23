@@ -1,5 +1,5 @@
 homepage: "https://www.joturl.com/",
 documentation: "https://joturl.zendesk.com/hc/en-us/",
 versions:
-  - sha: 3bb33ec9f15d55ceaee1d9f61eda70c36abd0524
-    changeNotes: added domain support
+  - sha: 4d0959c8ab406ef684ebd52cc885af7907f2abc1
+    changeNotes: solved extended parameters bug
